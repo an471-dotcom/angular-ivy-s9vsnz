@@ -1,0 +1,9 @@
+.sign-in{
+  background-color:#e50914 ;
+  color:white;
+  height: 35px;
+  font-size: 1rem;
+  padding:7px 17px;
+  border-radius: .25rem;
+  border:none;
+}

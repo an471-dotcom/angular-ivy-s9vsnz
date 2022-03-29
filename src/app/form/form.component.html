@@ -1,0 +1,65 @@
+<div class="flex">
+  <div class="form">
+    <form (ngSubmit)="onSubmit()" #MyForm="ngForm">
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="First name"
+          class="form-control"
+          name="FirstName"
+          [ngModel]="model.firstName"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Last name"
+          name="LastName"
+          class="form-control"
+          [ngModel]="model.lastName"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="Email"
+          id="email"
+          name="Email"
+          class="form-control"
+          [ngModel]="model.email"
+        />
+      </div>
+
+      <div class="form-group">
+        <select
+          class="form-control"
+          name="country"
+          [ngModel]="model.country"
+        >
+          <option *ngFor="let con of regions">{{ con }}</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="submited" class="card">
+    <div class="card-body">
+      <h3>FirstName:</h3>
+      {{ MyForm.value.FirstName | json }}
+    </div>
+    <div class="card-body">
+      <h3>LastName:</h3>
+      {{ MyForm.value.LastName | json }}
+    </div>
+    <div class="card-body">
+      <h3>Email:</h3>
+      {{ MyForm.value.Email | json }}
+    </div>
+    <div class="card-body">
+      <h3>country:</h3>
+      {{ MyForm.value.country | json }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="top-element">
+  <div class="color-gradient">
+    <nav>
+      <div class="logo">
+        <img
+          src="https://seeklogo.com/images/N/netflix-logo-DD40971CE6-seeklogo.com.png"
+        />
+      </div>
+      <div class="comp">
+        <select >
+          <option>English</option>
+          <option>தமிழ்</option>
+        </select>
+        <app-button [name]="language"></app-button>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="title">
+        <h3>{{heading}}</h3>
+        <p>{{subheading}}</p>
+      </div>
+      <p>
+       {{message}}
+      </p>
+      <div>
+        <input type="email" placeholder="Email Address" />
+        <button>Get started</button>
+      </div>
+    </div>
+  </div>
+</div>
+
