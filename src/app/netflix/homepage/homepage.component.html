@@ -7,20 +7,20 @@
         />
       </div>
       <div class="comp">
-        <select >
+        <select>
           <option>English</option>
           <option>தமிழ்</option>
         </select>
-        <app-button [name]="language"></app-button>
+        <app-button routerLink="/forms" [name]="buttonName"></app-button>
       </div>
     </nav>
     <div class="main">
       <div class="title">
-        <h3>{{heading}}</h3>
-        <p>{{subheading}}</p>
+        <h3>{{ heading }}</h3>
+        <p>{{ subheading }}</p>
       </div>
       <p>
-       {{message}}
+        {{ message }}
       </p>
       <div>
         <input type="email" placeholder="Email Address" />
@@ -29,4 +29,3 @@
     </div>
   </div>
 </div>
-

@@ -14,6 +14,6 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     ButtonComponent,
   ],
-  exports: [NetflixComponent],
+  exports: [NetflixComponent,ButtonComponent],
 })
 export class NetflixModule {}

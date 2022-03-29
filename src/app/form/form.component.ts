@@ -17,6 +17,7 @@ export class FormComponent implements OnInit {
     'Africa',
     'Mediterranean & Middle East.',
   ];
+  buttonName="Go Back"
   onSubmit() {
     this.submited = true;
   }
